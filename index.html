@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keep</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/kelpui@0/css/kelp.css"
+    />
+  </head>
+  <body>
+    <section class="app-container">
+      <div class="keepForm" id="keep-form">
+        <input
+          class="titleInput"
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Title"
+        />
+        <input
+          class="taskInput"
+          type="text"
+          id="task"
+          name="task"
+          placeholder="Take a note"
+        />
+        <div id="options-container" class="optionsPanel">
+          <input id="color" name="color" class="colorPicker" type="color" />
+          <input id="pinned" name="pinned" type="checkbox" />
+        </div>
+      </div>
+    </section>
+    <section class="listing-container">
+      <h2>PINNED</h2>
+      <div id="pinned-container" class="listing"></div>
+    </section>
+    <section class="listing-container">
+      <h2>OTHERS</h2>
+      <div id="others-container" class="listing"></div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
