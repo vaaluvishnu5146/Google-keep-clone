@@ -23,8 +23,7 @@ input[type="text"] {
   border-radius: 10px;
   .titleInput {
     margin: 0px;
-    display: none;
-    visibility: hidden;
+    font-size: 24px;
 
     &::placeholder {
       font-size: 24px;
@@ -34,36 +33,35 @@ input[type="text"] {
   .taskInput {
     &::placeholder {
       font-size: 16px;
-      font-style: italic;
     }
   }
   .colorPicker {
     width: 35px;
     height: 35px;
   }
+  .colorPickerPanel {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
   .optionsPanel {
     display: none;
     visibility: hidden;
     gap: 15px;
+    margin-top: 10px;
   }
 }
 
-.listing-container {
+.container {
   margin-bottom: 20px;
-  > h2 {
+  h2 {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 15px;
   }
-  > .listing {
-    display: flex;
-    flex-wrap: wrap;
+  .listing {
     column-gap: 10px;
     row-gap: 20px;
     .card {
       border: 1px solid #e0e0e0;
-      width: 200px;
-      height: 200px;
       border-radius: 10px;
       color: #737373;
       padding: 20px;
